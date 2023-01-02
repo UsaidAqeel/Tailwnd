@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,12 +11,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
 @layer base {
-  .cus{
-    @apply !bg-pink-300 !p-8 !text-2xl
+  .cus {
+    @apply bg-pink-300 !p-8 !text-2xl !col-span-2
+  }
+
+}
+
+@layer base {
+  .cus2{
+    @apply !grid-cols-3
   }
 }
